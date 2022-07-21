@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    background-color: #E1BB80;
+    transition: ease-in-out
+}
+
+input {
+    border: none;
+    border-radius: 3px;
+
+}
+
+.updatebtn {
+    border: none;
+    background-color: #3E885B;
+    padding: 5px;
+    color: white;
+}
+
+.updatebtn:hover {
+    background-color: #306b47;
+}
+
+.deletebtn {
+    border: none;
+    background-color: #FE5E41;
+    padding: 5px;
+    color: white
+}
+
+.deletebtn:hover {
+    background-color: #d44e36;
+}
+
+.closebtn {
+    border: none;
+    background-color: #FE5E41;
+    padding-bottom: 5px;
+    padding-right: 1px;
+    color: white;
+    float: right;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    background-color: #f33211;
+}

@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <div class="card">
+        <button (click)="onclose()" class="closebtn">x</button>
+        <!--close button-->
+        <form *ngIf="currentItem">
+            <label for="Item">Item</label>
+            <br>
+            <input type="text" id="item" [(ngModel)]="currentItem.itemName" name="item">
+            <br>
+            <label for="quantity">Quantity</label>
+            <br>
+            <input type="text" class="form-control" id="quantity" [(ngModel)]="currentItem.itemQuantity"
+                name="quantity">
+        </form>
+        <button type="submit" (click)="updateItem()" class="updatebtn">Update</button>
+        <!--updating-->
+        <button (click)="deleteItem()" class="deletebtn">Delete</button>
+        <!--deleting-->
+        <p>{{ message }}</p>
+        <!--Status message-->
+    </div>
+
+
+
+
+</div>

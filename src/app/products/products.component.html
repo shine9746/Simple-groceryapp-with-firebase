@@ -1,0 +1,18 @@
+<div class="items">
+    <h3>Items</h3>
+    <ul>
+        <li *ngFor="let grocery of groceryItems; let i = index" [class.active]="i == currentIndex"
+            (click)="setActiveItem(grocery, i)">
+            {{ grocery.itemName }} <br> {{grocery.itemQuantity}}
+            <!--displaying item and quantity-->
+        </li>
+    </ul>
+</div>
+<div *ngIf="currentItem">
+    <app-productdetailview (refreshList)="refreshList()" [groceryItems]="currentItem"></app-productdetailview>
+    <!--productdetail component-->
+</div>
+<div class="button-wrapper">
+    <button (click)="removeAllItems()">Remove All</button>
+    <!--removing all items-->
+</div>

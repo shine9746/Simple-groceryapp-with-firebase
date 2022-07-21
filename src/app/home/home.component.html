@@ -1,0 +1,20 @@
+<div class="home">
+    <h1>Grocery App</h1>
+    <div class="form">
+        <form>
+            <label for="item">Item</label>
+            <br>
+            <input type="text" id="item" name="item" [(ngModel)]="grocery.itemName">
+            <br><br>
+            <label for="quantity">Quantity</label>
+            <br>
+            <input type="number" id="quantity" name="quantity" [(ngModel)]="grocery.itemQuantity">
+            <br><br>
+        </form>
+    </div>
+    <div class="button-wrapper">
+        <button (click)="onAddItem()">Add Item</button> <!-- To add items -->
+    </div>
+    <app-products></app-products>
+    <!--app productsComponent-->
+</div>
